@@ -3,12 +3,8 @@ fcc-net-neutrality-comments
 
 scraping, parsing and making sense of the flood of comments submitted to the FCC on net neutrality
 
-fcc-net-neutrality-comments
-===========================
-
-scraping, parsing and making sense of the flood of comments submitted to the FCC on net neutrality
-
-
+Introduction & Background
+-------------------------
 
 Before you dive in, it's going to be realllly useful to check out the tutorial at gensim: https://radimrehurek.com/gensim/tutorial.html
 

@@ -3,6 +3,18 @@ fcc-net-neutrality-comments
 
 scraping, parsing and making sense of the flood of comments submitted to the FCC on net neutrality
 
+FAQ (Read First!)
+-----------------
+
+**Will the code in this repo "just work"?**
+No. It wasn't really written with any intent other than the short-term goals of a one-off project.
+
+**Is the code in this repo useful?**
+Qualified yes. There's solid, re-useable components here. However, it's very tightly fit to the circumstance we were in at the time. Some of the code here took us down blind alleys and probably shouldn't be used at all.
+
+Depending on your timeline, you might be able to make use of this stuff, but see the sections below, which will show you around a bit.
+
+
 Introduction & Background
 -------------------------
 

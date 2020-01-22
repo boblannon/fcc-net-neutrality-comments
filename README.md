@@ -39,7 +39,7 @@ Preprocessing
 Corpus-Building
 ---------------
 
-[build_corpus_and_dictionary.py](build_corpus_and_dictionary.py) lazily reads through the processed JSON files and creates two things: a gensim.Dictionary that will be used for mapping tokens to identifiers and a plaintext file that lists all of the document ids.
+[./scripts/build_corpus_and_dictionary.py](build_corpus_and_dictionary.py) lazily reads through the processed JSON files and creates two things: a gensim.Dictionary that will be used for mapping tokens to identifiers and a plaintext file that lists all of the document ids.
 
 [serializing_corpus.py](./scripts/serializing_corpus.py) uses the dictionary to create a MatrixMarket serialization of the corpus (see [gensim "corpus formats" doc](https://radimrehurek.com/gensim/tut1.html#corpus-formats) for more on this)
 
@@ -61,7 +61,7 @@ Hierarchical Clustering
 
 [hybrid_clustering.py](./scripts/hybrid_clustering.py): this script takes the LSI model and creates a MatrixSimilarity  model, which is basically an index that will allow you to return the most similar document in the corpus to some query. It takes advantage of the matrix representation, though, so that it can ask, for any arbitrary group of documents, how great is their variance (in the space created by the LSI model)? It uses that variance metric to do hierarchical clustering using a home-brewed algorithm that i lovingly refer to as Shitty ANOVA (tm).
 
-[kanopy_cluster_tree.py](kanopy_cluster_tree.py): this takes the cluster information produced in the last step and builds the data structure that we used in the final visualization. It builds a JSON representation of the tree that can be used by the visualization code (which is a modified version of the [d3js circle-packing example](https://bl.ocks.org/mbostock/4063530)). It also collects the list of documents that belong to each cluster and tries to identify five key words that describe the cluster
+[kanopy_cluster_tree.py](./scripts/kanopy_cluster_tree.py): this takes the cluster information produced in the last step and builds the data structure that we used in the final visualization. It builds a JSON representation of the tree that can be used by the visualization code (which is a modified version of the [d3js circle-packing example](https://bl.ocks.org/mbostock/4063530)). It also collects the list of documents that belong to each cluster and tries to identify five key words that describe the cluster
 
 
 Visualization

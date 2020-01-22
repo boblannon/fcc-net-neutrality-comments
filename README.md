@@ -39,7 +39,7 @@ Preprocessing
 Corpus-Building
 ---------------
 
-[./scripts/build_corpus_and_dictionary.py](build_corpus_and_dictionary.py) lazily reads through the processed JSON files and creates two things: a gensim.Dictionary that will be used for mapping tokens to identifiers and a plaintext file that lists all of the document ids.
+[build_corpus_and_dictionary.py](./scripts/build_corpus_and_dictionary.py) lazily reads through the processed JSON files and creates two things: a gensim.Dictionary that will be used for mapping tokens to identifiers and a plaintext file that lists all of the document ids.
 
 [serializing_corpus.py](./scripts/serializing_corpus.py) uses the dictionary to create a MatrixMarket serialization of the corpus (see [gensim "corpus formats" doc](https://radimrehurek.com/gensim/tut1.html#corpus-formats) for more on this)
 
